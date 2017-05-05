@@ -84,9 +84,17 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_title) {
+            Fragment frag = TitleFragment.newInstance();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frag_layout, frag, TAGFRAGMENT)
+                    .addToBackStack(TAGFRAGMENT)
+                    .commit();
+
+            // Play the title 
 
         } else if (id == R.id.nav_about) {
-            Fragment frag = new BlankFragment();
+            Fragment frag = BlankFragment.newInstance("About");
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.frag_layout, frag, TAGFRAGMENT)
