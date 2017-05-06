@@ -30,4 +30,13 @@
         <item name="android:layout_marginBottom">1dp</item>
     </style>
 
+    <style name="LayoutParams">
+        <item name="android:layout_margin">16dp</item>
+
+
+    </style>
+
+
+    <!--COPY TEXTS FROM 105 RCACC-->
+
 </resources>
