@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.scowluga.android.msccareershowcase.description.TitleFragment;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -70,7 +72,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
+//        if (id == R.id.action_sound) {
+//
+//            // Pause, set as play icon, play, set as pause icon
+//
 //            return true;
 //        }
 
@@ -90,8 +95,6 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.frag_layout, frag, TAGFRAGMENT)
                     .addToBackStack(TAGFRAGMENT)
                     .commit();
-
-            // Play the title 
 
         } else if (id == R.id.nav_about) {
             Fragment frag = BlankFragment.newInstance("About");
