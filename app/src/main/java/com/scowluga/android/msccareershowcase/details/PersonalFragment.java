@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.scowluga.android.msccareershowcase.MainActivity;
 import com.scowluga.android.msccareershowcase.R;
 
 import java.util.ArrayList;
@@ -42,12 +43,17 @@ public class PersonalFragment extends Fragment {
         configure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConfigurationDialog cd = new ConfigurationDialog();
+                ConfigurationDialog cd = ConfigurationDialog.newInstance(0);
                 cd.show(getFragmentManager(), "TAGFRAGMENT");
             }
         });
 
 
         return v;
+    }
+    @Override
+    public void onResume() {
+        MainActivity.toolbar.setTitle("Personal");
+        super.onResume();
     }
 }

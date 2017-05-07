@@ -86,7 +86,7 @@
                 style="@style/listItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Problem Solving - Encountering and working through various problems such as product malfunctions and defections. "
+                android:text="2. Problem Solving - Encountering and working through various problems such as product malfunctions and defections (ie. Error downloading software due to lack of Windows update). "
 
                 />
 

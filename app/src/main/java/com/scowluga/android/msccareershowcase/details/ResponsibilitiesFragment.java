@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.scowluga.android.msccareershowcase.MainActivity;
 import com.scowluga.android.msccareershowcase.R;
 
 /**
@@ -38,6 +39,11 @@ public class ResponsibilitiesFragment extends Fragment {
         // Button saying "Configuration walk through!" 
 
         return v;
+    }
+    @Override
+    public void onResume() {
+        MainActivity.toolbar.setTitle("Responsibilities");
+        super.onResume();
     }
 
 }

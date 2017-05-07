@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.scowluga.android.msccareershowcase.MainActivity;
 import com.scowluga.android.msccareershowcase.R;
 
 /**
@@ -77,4 +78,9 @@ public class PurposeFragment extends Fragment {
         return v;
     }
 
+    @Override
+    public void onResume() {
+        MainActivity.toolbar.setTitle("Purpose");
+        super.onResume();
+    }
 }

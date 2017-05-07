@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.scowluga.android.msccareershowcase.MainActivity;
 import com.scowluga.android.msccareershowcase.R;
 
 /**
@@ -48,7 +49,7 @@ public class HomeFragment extends Fragment {
         });
 
         Button rate = (Button)v.findViewById(R.id.home_rate);
-        contact.setOnClickListener(new View.OnClickListener() {
+        rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // don't know if this works. Stackoverflow copied
@@ -73,4 +74,9 @@ public class HomeFragment extends Fragment {
         return v;
     }
 
+    @Override
+    public void onResume() {
+        MainActivity.toolbar.setTitle("Home");
+        super.onResume();
+    }
 }

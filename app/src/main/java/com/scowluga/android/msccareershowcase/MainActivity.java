@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAGFRAGMENT = "TAGFRAGMENT";
-    private static Toolbar toolbar;
+    public static Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

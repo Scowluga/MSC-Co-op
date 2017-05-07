@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/titleText"
-                android:text="David Lu Career Showcase"/>
+                android:text="David L. Career Showcase"/>
 
             <TextView
                 android:layout_width="match_parent"

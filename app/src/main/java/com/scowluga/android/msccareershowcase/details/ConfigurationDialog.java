@@ -39,9 +39,10 @@ public class ConfigurationDialog extends DialogFragment {
         // Use `newInstance` instead as shown below
     }
 
-    public static ConfigurationDialog newInstance() {
+    public static ConfigurationDialog newInstance(int number) {
         ConfigurationDialog frag = new ConfigurationDialog();
         Bundle args = new Bundle();
+        args.putInt("KEY", number);
         frag.setArguments(args);
         return frag;
     }
@@ -51,7 +52,10 @@ public class ConfigurationDialog extends DialogFragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment4_configuration, container);
 
-        initialize(v);
+        Bundle bundle = getArguments();
+        int key = bundle.getInt("KEY");
+
+        initialize(v, key);
 
         Button next = (Button)v.findViewById(R.id.config_next);
         next.setOnClickListener(new View.OnClickListener() {
@@ -92,19 +96,30 @@ public class ConfigurationDialog extends DialogFragment {
     }
 
 
-    private void initialize(View v) {
-        Step one = new Step(R.drawable.config1, "Step 1: Pick Up ", "After the order is made, and the devices have arrived, the order is ready to be installed, and is picked up from the warehouse. ");
-        Step two = new Step(R.drawable.config2, "Step 2: Setup", "The computer is plugged in and powered on, and the software + devices are prepared to be installed.");
-        Step three = new Step(R.drawable.config3, "Step 3: Configuration", "A combination of windows updates, system updates, and software installations configure the computer to optimal state for ease of use. This is the longest step, and can take up to 3 days.");
-        Step four = new Step(R.drawable.config4, "Step 4: Check", "All software, serial numbers, and devices are checked for problems/malfunctions.");
-        Step five = new Step(R.drawable.config5, "Step 5: Distribute", "The order is packed up, and ready to start benefiting the life of someone in need.");
+    private void initialize(View v, int key) {
 
-        steps = new ArrayList<>(Arrays.asList(one, two, three, four, five));
+        if (key == 0) {
+            Step one = new Step(R.drawable.config1, "Step 1: Pick Up ", "After the order is made, and the devices have arrived, the order is ready to be installed, and is picked up from the warehouse. ");
+            Step two = new Step(R.drawable.config2, "Step 2: Setup", "The computer is plugged in and powered on, and the software + devices are prepared to be installed.");
+            Step three = new Step(R.drawable.config3, "Step 3: Configuration", "A combination of windows updates, system updates, and software installations configure the computer to optimal state for ease of use. This is the longest step, and can take up to 3 days.");
+            Step four = new Step(R.drawable.config4, "Step 4: Check", "All software, serial numbers, and devices are checked for problems/malfunctions.");
+            Step five = new Step(R.drawable.config5, "Step 5: Distribute", "The order is packed up, and ready to start benefiting the life of someone in need.");
+
+            steps = new ArrayList<>(Arrays.asList(one, two, three, four, five));
+
+        } else {
+            steps = new ArrayList<>(Arrays.asList(
+                    new Step(R.drawable.add1, "Example assistive product", "Powerful magnifier to help low vision people."),
+                    new Step(R.drawable.add2, "Computer Hard drive", "Example halfway point of swapping defective hard drive from computer."),
+                    new Step(R.drawable.add3, "Problem Solving", "Example error in creating system repair disk, requires problem solving abilities."),
+                    new Step(R.drawable.add4, "Various Tools", "Showcasing tools for use including: stylus, ruler, post-it notes, etc."),
+                    new Step(R.drawable.add5, "Replacing Card", "Showing midway of replacing a card, wearing anti-static wrist band.")
+            ));
+        }
         count = 0;
         image = (ImageView) v.findViewById(R.id.config_img);
         title = (TextView) v.findViewById(R.id.config_title);
         description = (TextView) v.findViewById(R.id.config_description);
-
         setupConfig(v, count);
     }
 
