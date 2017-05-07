@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scowluga.android.msccareershowcase.details.ResponsibilitiesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/LayoutParams">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/infoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOut"
+                android:text="Working up to almost 20 hours a week, I had varying duties as listed below."/>
+
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Perform system configurations through setup and installation of various software on devices, assisting in preparation such that the user can directly begin use upon receiving. Uses various PowerShell and command scripts."
+
+                />
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Create product web pages and assist in development of the MCS website through HTML, CSS, and Javascript. "
+
+                />
+
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Create constant contact emails for various marketing campaign, assisting in distribution of assistive software to schools and individual patrons across Canada. "
+
+                />
+
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Understand and learn key points about products to assist in marketing and media development (website). "
+
+                />
+
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Assist in various other duties including hardware replacement, troubleshooting, etc. "
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/infoText"
+                android:layout_marginTop="16dp"
+                android:text="Through the placement, I have developed and built upon 3 essential skills."/>
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Organization - Taking note and keeping track of all items on the sales order of a configuration. "
+
+                />
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Problem Solving - Encountering and working through various problems such as product malfunctions and defections. "
+
+                />
+
+            <TextView
+                style="@style/listItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Detail Oriented Work - Accurately keeping track of and documenting process of configuration, specifically including serial numbers and keys. "
+
+                />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

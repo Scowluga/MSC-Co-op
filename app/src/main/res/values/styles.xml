@@ -31,12 +31,49 @@
     </style>
 
     <style name="LayoutParams">
-        <item name="android:layout_margin">16dp</item>
-
-
+        <item name="android:layout_marginTop">?attr/actionBarSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginOut</item>
+        <item name="android:layout_marginRight">@dimen/marginOut</item>
+        <item name="android:layout_marginBottom">@dimen/marginOut</item>
     </style>
 
+    <style name="listItem">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!--*******************************************************************-->
+    <!--****************  TEXT AND INFORMATION DISPLAY  *******************-->
+    <!--*******************************************************************-->
 
-    <!--COPY TEXTS FROM 105 RCACC-->
+    <style name="largeText">
+        <item name="android:color">@color/black</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
+    <style name="titleText">
+        <item name="android:color">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="accentText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="infoText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+    </style>
+
+    <style name="groupText">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="childText">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <dimen name="marginOut">16dp</dimen>
 </resources>

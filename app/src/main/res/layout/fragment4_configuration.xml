@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/config_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/msc_logo"/>
+    <TextView
+        android:id="@+id/config_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titleText"
+        android:text="Step 1: Pick up "/>
+
+    <TextView
+        android:id="@+id/config_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/infoText"
+        android:text="Here we pick it up!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/config_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+        <Button
+            android:id="@+id/config_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.scowluga.android.msccareershowcase.Placement;
+package com.scowluga.android.msccareershowcase.other;
 
 
 import android.os.Bundle;
@@ -12,11 +12,20 @@ import com.scowluga.android.msccareershowcase.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PersonalFragment extends Fragment {
+public class CareerFragment extends Fragment {
 
 
-    public PersonalFragment() {
+    public CareerFragment() {
         // Required empty public constructor
+    }
+
+    public static CareerFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        CareerFragment fragment = new CareerFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
 
@@ -24,12 +33,7 @@ public class PersonalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment4_personal, container, false);
-
-
-        // Duties - Skills
-
-        return v;
+        return inflater.inflate(R.layout.fragment5_career, container, false);
     }
 
 }

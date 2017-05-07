@@ -1,4 +1,4 @@
-package com.scowluga.android.msccareershowcase;
+package com.scowluga.android.msccareershowcase.details;
 
 
 import android.os.Bundle;
@@ -6,40 +6,36 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
+import com.scowluga.android.msccareershowcase.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BlankFragment extends Fragment {
+public class ResponsibilitiesFragment extends Fragment {
 
-    private static String name;
 
-    public BlankFragment() {
+    public ResponsibilitiesFragment() {
         // Required empty public constructor
     }
 
-    public static BlankFragment newInstance(String title) {
-
-        name = title;
-
+    public static ResponsibilitiesFragment newInstance() {
+        
         Bundle args = new Bundle();
-
-        BlankFragment fragment = new BlankFragment();
+        
+        ResponsibilitiesFragment fragment = new ResponsibilitiesFragment();
         fragment.setArguments(args);
         return fragment;
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment0_blank, container, false);
+        View v = inflater.inflate(R.layout.fragment3_responsibilities, container, false);
 
-        TextView tv = (TextView)v.findViewById(R.id.blank_text);
-        tv.setText(name);
+
+        // Button saying "Configuration walk through!" 
 
         return v;
     }

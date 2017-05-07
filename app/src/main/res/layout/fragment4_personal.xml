@@ -2,25 +2,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.scowluga.android.msccareershowcase.Placement.PersonalFragment">
+    tools:context="com.scowluga.android.msccareershowcase.details.PersonalFragment">
 
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        style="@style/LayoutParams">
 
-        <TabHost
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Personal Co-op Experience"
+                style="@style/titleText"
+                android:layout_marginTop="16dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/infoText"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="On a regular week, I work 19 hours, and my main duty is performing configurations. An average week consists of around 3 configurations, and in between them I research other products, assist in hardware issues, and recently I’ve began looking more carefully at the scripts that assist in the configuration process. "/>
+            <Button
+                android:id="@+id/personal_configure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Walkthrough a Configuration"
+                />
 
-
-
-
-
-        </TabHost>
-
-    </RelativeLayout>
-
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

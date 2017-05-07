@@ -2,43 +2,57 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:title="Description" >
+    <item android:title="General" >
         <menu>
             <item
-                android:id="@+id/nav_title"
-                android:icon="@drawable/nav_title"
-                android:title="Title" />
+                android:id="@+id/nav_home"
+                android:icon="@drawable/home"
+                android:title="Home" />
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/company"-->
+                <!--android:title="About" />-->
             <item
-                android:id="@+id/nav_about"
-                android:icon="@drawable/company"
-                android:title="About" />
-            <item
-                android:id="@+id/nav_organization"
-                android:icon="@drawable/chart"
-                android:title="Organization" />
+                android:id="@+id/nav_purpose"
+                android:icon="@drawable/accessible"
+                android:title="Purpose" />
+            <!--<item-->
+                <!--android:id="@+id/nav_products"-->
+                <!--android:icon="@drawable/store"-->
+                <!--android:title="Products" />-->
+
         </menu>
     </item>
 
-    <item android:title="Placement">
+    <item android:title="Details">
         <menu>
             <item
                 android:id="@+id/nav_responsibilities"
                 android:icon="@drawable/assignment"
                 android:title="Responsibilities" />
             <item
-                android:id="@+id/nav_skills"
-                android:icon="@drawable/wrench"
-                android:title="Skills" />
-            <item
-                android:id="@+id/nav_experience"
-                android:icon="@drawable/calendar"
-                android:title="Experience" />
+                android:id="@+id/nav_personal"
+                android:icon="@drawable/person"
+                android:title="Personal" />
+
+            <!--<item-->
+                <!--android:id="@+id/nav_skills"-->
+                <!--android:icon="@drawable/wrench"-->
+                <!--android:title="Skills" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_experience"-->
+                <!--android:icon="@drawable/calendar"-->
+                <!--android:title="Experience" />-->
         </menu>
     </item>
 
 
-    <item android:title="Connection">
+    <item android:title="Other">
         <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_connections"-->
+                <!--android:icon="@drawable/here"-->
+                <!--android:title="Connections" />-->
             <item
                 android:id="@+id/nav_course"
                 android:icon="@drawable/school"
@@ -47,11 +61,12 @@
                 android:id="@+id/nav_career"
                 android:icon="@drawable/work"
                 android:title="Career" />
-            <item
-                android:id="@+id/nav_additional"
-                android:icon="@drawable/info"
-                android:title="Additional" />
         </menu>
     </item>
+
+    <item
+        android:id="@+id/nav_additional"
+        android:icon="@drawable/info"
+        android:title="Additional" />
 
 </menu>

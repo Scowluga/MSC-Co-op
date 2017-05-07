@@ -1,11 +1,13 @@
-package com.scowluga.android.msccareershowcase.description;
+package com.scowluga.android.msccareershowcase.general;
 
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TabHost;
 
 import com.scowluga.android.msccareershowcase.R;
 
@@ -40,7 +42,24 @@ public class AboutFragment extends Fragment {
 
 
 
+        TabHost host = (TabHost)v.findViewById(R.id.about_tabHost);
+        host.setup();
+
+        //Tab 1
+        TabHost.TabSpec spec = host.newTabSpec("Purpose");
+        spec.setContent(R.id.about_tab1);
+        spec.setIndicator("Purpose", getResources().getDrawable(R.drawable.accessible));
+        host.addTab(spec);
+
+        //Tab 2
+        spec = host.newTabSpec("Products");
+        spec.setContent(R.id.about_tab2);
+        spec.setIndicator("Products", getResources().getDrawable(R.drawable.store));
+        host.addTab(spec);
+
         return v;
     }
+
+
 
 }

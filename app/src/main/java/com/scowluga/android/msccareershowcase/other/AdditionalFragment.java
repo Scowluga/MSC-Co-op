@@ -1,4 +1,4 @@
-package com.scowluga.android.msccareershowcase.description;
+package com.scowluga.android.msccareershowcase.other;
 
 
 import android.os.Bundle;
@@ -12,33 +12,26 @@ import com.scowluga.android.msccareershowcase.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TitleFragment extends Fragment {
+public class AdditionalFragment extends Fragment {
 
 
-    public TitleFragment() {
+    public AdditionalFragment() {
         // Required empty public constructor
     }
 
-    public static TitleFragment newInstance() {
+    public static AdditionalFragment newInstance() {
         
         Bundle args = new Bundle();
         
-        TitleFragment fragment = new TitleFragment();
+        AdditionalFragment fragment = new AdditionalFragment();
         fragment.setArguments(args);
         return fragment;
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment1_title, container, false);
-
-        // Play Audio?
-
-
-
-        return v;
+        return inflater.inflate(R.layout.fragment6_additional, container, false);
     }
 
 }
