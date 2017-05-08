@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:layout_marginRight="8dp"
-            app:srcCompat="@drawable/msc_logo"
+            app:srcCompat="@mipmap/nowlauncher"
             android:adjustViewBounds="true" />
 
         <LinearLayout

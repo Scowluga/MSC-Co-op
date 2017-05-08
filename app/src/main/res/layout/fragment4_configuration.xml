@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/msc_logo"/>
+        android:src="@mipmap/nowlauncher"/>
     <TextView
         android:id="@+id/config_title"
         android:layout_width="wrap_content"
