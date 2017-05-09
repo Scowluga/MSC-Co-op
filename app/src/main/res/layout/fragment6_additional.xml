@@ -38,7 +38,7 @@
                 android:drawableLeft="@drawable/ic_menu_camera"
                 style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_gravity="center"
-                android:text="View Image Gallery"/>
+                android:text="View Additional Images of Work"/>
 
         </LinearLayout>
     </ScrollView>

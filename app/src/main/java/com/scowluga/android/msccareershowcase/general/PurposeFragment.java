@@ -70,7 +70,7 @@ public class PurposeFragment extends Fragment {
 //
 //                builder.show();
 
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/0B29FBxVkiwjNQ2lfbmd4SHdVTkpEbDZJTElkNGd2RGFIMHI0/view?usp=sharing"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/0B29FBxVkiwjNcE54M3VsT1dDVE0/view?usp=sharing"));
                 startActivity(browserIntent);
             }
         });

@@ -53,7 +53,7 @@ public class ConfigurationDialog extends DialogFragment {
         View v = inflater.inflate(R.layout.fragment4_configuration, container);
 
         Bundle bundle = getArguments();
-        int key = bundle.getInt("KEY");
+        final int key = bundle.getInt("KEY");
 
         initialize(v, key);
 
@@ -61,7 +61,7 @@ public class ConfigurationDialog extends DialogFragment {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (count == 4) {
+                if (count == 4 + key) {
                     dismiss();
                 } else {
                     count ++;
@@ -109,11 +109,12 @@ public class ConfigurationDialog extends DialogFragment {
 
         } else {
             steps = new ArrayList<>(Arrays.asList(
-                    new Step(R.drawable.add1, "Example assistive product", "Powerful magnifier to help low vision people."),
-                    new Step(R.drawable.add2, "Computer Hard drive", "Example halfway point of swapping defective hard drive from computer."),
-                    new Step(R.drawable.add3, "Problem Solving", "Example error in creating system repair disk, requires problem solving abilities."),
+                    new Step(R.drawable.add1, "Example Assistive Product", "Powerful magnifier to help low vision people."),
+                    new Step(R.drawable.add2, "Computer Hard Drive Replacement", "Example halfway point of swapping defective hard drive from computer."),
+                    new Step(R.drawable.add3, "Problem Solving (Errors)", "Example error in creating system repair disk, requires problem solving abilities."),
                     new Step(R.drawable.add4, "Various Tools", "Showcasing tools for use including: stylus, ruler, post-it notes, etc."),
-                    new Step(R.drawable.add5, "Replacing Card", "Showing midway of replacing a card, wearing anti-static wrist band.")
+                    new Step(R.drawable.add5, "Replacing Computer Card", "Showing midway of replacing a card, wearing anti-static wrist band."),
+                    new Step(R.drawable.add6, "Website Development", "Creating the web product page of Logan Technology Solutions for the Proxtalker (communication assistance).")
             ));
         }
         count = 0;
