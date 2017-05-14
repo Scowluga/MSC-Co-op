@@ -78,6 +78,8 @@
                             android:text="Products"
                             android:drawableLeft="@drawable/left_products"/>
 
+                        <!--CHANGE THIS FROM CHART -> TEAM -->
+                        <!--https://microscience.on.ca/team/-->
                         <Button
                             android:id="@+id/purpose_chart"
                             android:layout_width="0dp"
