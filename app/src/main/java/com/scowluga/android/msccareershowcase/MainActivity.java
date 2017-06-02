@@ -19,6 +19,7 @@ import com.scowluga.android.msccareershowcase.general.PurposeFragment;
 import com.scowluga.android.msccareershowcase.other.AdditionalFragment;
 import com.scowluga.android.msccareershowcase.other.CareerFragment;
 import com.scowluga.android.msccareershowcase.other.CourseFragment;
+import com.scowluga.android.msccareershowcase.tabattempt.TabAttemptFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity
         // Setting up home page
 
         toolbar.setTitle("Home");
-        Fragment frag = HomeFragment.newInstance();
+        Fragment frag = new HomeFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frag_layout, frag, TAGFRAGMENT)
                 .addToBackStack(TAGFRAGMENT)

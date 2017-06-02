@@ -43,15 +43,6 @@ public class CareerFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment5_career, container, false);
 
-        if (container == null) {
-            return null;
-        }
-        initialize();
-
-        RecyclerView recyclerView = (RecyclerView)v.findViewById(R.id.recycler_view);
-        DegreeAdapter degreeAdapter = new DegreeAdapter(degrees, getContext());
-        recyclerView.setAdapter(degreeAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return v;
     }
